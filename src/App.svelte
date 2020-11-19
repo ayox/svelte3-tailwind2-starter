@@ -1,0 +1,202 @@
+<script>
+    import Counter from "./Counter.svelte";
+    import SassTest from "./SassTest.svelte";
+
+    export let name;
+    let title = 'Svelte 3 with tailwind 2';
+</script>
+
+<style global>
+    main {
+        text-align: center;
+        padding: 1em;
+        max-width: 240px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-weight: 100;
+    }
+
+    @media (min-width: 640px) {
+        main {
+            max-width: none;
+        }
+    }
+
+    .btn {
+        @apply py-2 px-4 bg-indigo-500 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-75;
+    }
+
+</style>
+
+
+<div
+        class="relative bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 p-32 text-center text-white space-y-3"
+>
+    <h1 class="text-4xl font-bold text-white font-mono">
+        Svelte 11 with tailwind 2
+    </h1>
+    <a
+            href="https://github.com/ayox/Angular-11-tailwindcss-2"
+            target="_blank"
+            class="flex items-center justify-between absolute top-4 right-10 bg-gray-200 border border-gray-500 text-gray-900 font-mono text-sm px-2 py-1 rounded">
+        <svg class="octicon octicon-repo text-gray mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16"
+             aria-hidden="true">
+            <path fill-rule="evenodd"
+                  d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path>
+        </svg>
+        code</a>
+    <code class="inline-block px-2 py-1 bg-gray-200 rounded text-gray-900">{title}</code>
+
+    <Counter counter={230}/>
+
+</div>
+<section class="text-gray-700 body-font">
+    <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-20">
+            <h2
+                    class="text-xs text-red-500 tracking-widest font-medium title-font mb-1"
+            >
+                ROOF PARTY POLAROID
+            </h2>
+            <h1
+                    class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900"
+            >
+                Master Cleanse Reliac Heirloom
+            </h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+                Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
+                gentrify, subway tile poke farm-to-table. Franzen you probably haven't
+                heard of them man bun deep jianbing selfies heirloom prism food truck
+                ugh squid celiac humblebrag.
+            </p>
+        </div>
+        <div class="flex flex-wrap">
+            <div
+                    class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200"
+            >
+                <h2
+                        class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2"
+                >
+                    Shooting Stars
+                </h2>
+                <p class="leading-relaxed text-base mb-4">
+                    Fingerstache flexitarian street art 8-bit waistcoat. Distillery
+                    hexagon disrupt edison bulbche.
+                </p>
+                <a class="text-red-500 inline-flex items-center"
+                >Learn More
+                    <svg
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            class="w-4 h-4 ml-2"
+                            viewBox="0 0 24 24"
+                    >
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+            </div>
+            <div
+                    class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200"
+            >
+                <h2
+                        class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2"
+                >
+                    The Catalyzer
+                </h2>
+                <p class="leading-relaxed text-base mb-4">
+                    Fingerstache flexitarian street art 8-bit waistcoat. Distillery
+                    hexagon disrupt edison bulbche.
+                </p>
+                <a class="text-red-500 inline-flex items-center"
+                >Learn More
+                    <svg
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            class="w-4 h-4 ml-2"
+                            viewBox="0 0 24 24"
+                    >
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+            </div>
+            <div
+                    class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200"
+            >
+                <h2
+                        class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2"
+                >
+                    Neptune
+                </h2>
+                <p class="leading-relaxed text-base mb-4">
+                    Fingerstache flexitarian street art 8-bit waistcoat. Distillery
+                    hexagon disrupt edison bulbche.
+                </p>
+                <a class="text-red-500 inline-flex items-center"
+                >Learn More
+                    <svg
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            class="w-4 h-4 ml-2"
+                            viewBox="0 0 24 24"
+                    >
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+            </div>
+            <div
+                    class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200"
+            >
+                <h2
+                        class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2"
+                >
+                    Melanchole
+                </h2>
+                <p class="leading-relaxed text-base mb-4">
+                    Fingerstache flexitarian street art 8-bit waistcoat. Distillery
+                    hexagon disrupt edison bulbche.
+                </p>
+                <a class="text-red-500 inline-flex items-center"
+                >Learn More
+                    <svg
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            class="w-4 h-4 ml-2"
+                            viewBox="0 0 24 24"
+                    >
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="flex justify-center space-x-4 items-center mt-16 mt-16">
+            <button
+                    class="flex text-white bg-red-500 border-0 py-2 px-8 focus:outline-none hover:bg-red-600 rounded text-lg"
+            >
+                Angular
+            </button>
+            <button
+                    class="flex text-white bg-red-500 border-0 py-2 px-8 focus:outline-none hover:bg-red-600 rounded text-lg"
+            >
+                TailwindCSS
+            </button>
+        </div>
+    </div>
+</section>
+
+
+
+<SassTest name="hello there"/>
