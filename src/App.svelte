@@ -38,7 +38,7 @@
         Svelte 11 with tailwind 2
     </h1>
     <a
-            href="https://github.com/ayox/Angular-11-tailwindcss-2"
+            href="https://github.com/ayox/svelte3-tailwind2-starter"
             target="_blank"
             class="flex items-center justify-between absolute top-4 right-10 bg-gray-200 border border-gray-500 text-gray-900 font-mono text-sm px-2 py-1 rounded">
         <svg class="octicon octicon-repo text-gray mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16"
